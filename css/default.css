@@ -1,4 +1,6 @@
-﻿body {
+﻿
+
+body {
   margin: 0;
   padding: 0;
   background: #ffe;
@@ -28,13 +30,15 @@
 #messages {
   display: none;
   text-align: center;
-  font-size: 30px;
+  font-size: 42px;
+  font-family: "Ephesis",cursive;
 }
 #elapseClock .digit {
   font-family: "digit";
   font-size: 40px;
   text-align: center;
 }
+
 #loveu {
   padding: 5px;
   font-size: 22px;
@@ -42,11 +46,12 @@
   margin-right: 120px;
   text-align: right;
   display: none;
+  font-family: "Ephesis",cursive;
 }
 #loveu .signature {
   margin-top: 10px;
   font-size: 24px;
-  font-style: italic;
+
 }
 #clickSound {
   display: none;
@@ -119,7 +124,7 @@
   #loveHeart {
     float: none;
     margin: 0 auto;
-    scale: 0.5;
+    scale: 0.6;
     position: relative;
   }
 
