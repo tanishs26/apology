@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<title>Letter for snowy</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*Letter for Snowy</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hieeeee∞<br />
+			
+			<span class="comments">// Extremely Sorry bachhe. </span><br />
+			So yes, I am officially the world’s biggest morron<br />
+			<span class="comments">// </span><br />
+			Sorry for making you wait, meri hi galti thi saari <br />
+			I could have initiated and talked to u by putting my ego aside but nhi kiya <span style="color: crimson;">#PRINCESS</span> <br />
+			Ya ya i missed you (boht saara😭) <br />
+			Jyada bhao na khana ab<br />
+			Thank u snowy itna try karne ke liye <br />
+			Aage se tujhe pareshan nhi karunga aur ladunga bhi nhi <br />
+			<span class="comments">// (Not pretty sure though😁)</span><br />
+			Don't worry our bottle is safe with me<br />
+			<br>
+			<br>
+			just trust me thoda sa atleast for once, -will never stop loving you <br />
+			<br />
+			<br>
+			<br>
+			Chalo gimme a kissi by clicking this  <br />
+			<br>
+			<span id="heartspan">
+			<a href="./image.png"><img src="./love-you.gif" alt="image-not-found" style="width: 100px; height: 100px;"></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Pardon me, Miss Yashve Arya
+				</div>
+				<div id="loveu">
+					Snowy 2  Me 0 <br/>
+					<div class="signature">-Tanish</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 8, 5);
+together.setHours(16);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
